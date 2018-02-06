@@ -32,7 +32,6 @@
     if(!_isReading) {
         if([self startReading]) {
             [_btnStart setTitle: @"Stop" forState: UIControlStateNormal];
-            [_lblStatus setText: @"Scanning for QR Code..."];
         }
     } else {
         [self stopReading];
@@ -80,10 +79,11 @@
     if(metadataObjects != NULL && [metadataObjects count] > 0) {
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex: 0];
         if([[metadataObj type] isEqualToString: AVMetadataObjectTypeQRCode]) {
+            
             [_lblStatus performSelectorOnMainThread:@selector(setText:) withObject: [metadataObj stringValue] waitUntilDone: NO];
+             
             [self performSelectorOnMainThread:@selector(stopReading) withObject: nil waitUntilDone: NO];
             [_btnStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone: NO];
-            _isReading = NO;
         }
     }
 }

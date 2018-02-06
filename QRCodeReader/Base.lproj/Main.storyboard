@@ -20,27 +20,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9Z-Ew-tK5">
-                                <rect key="frame" x="47" y="73" width="280" height="350"/>
+                                <rect key="frame" x="16" y="50" width="343" height="385"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start to Read QR Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMg-e4-Wzc">
-                                        <rect key="frame" x="17" y="164" width="247" height="21"/>
+                                        <rect key="frame" x="84" y="182" width="174" height="21"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.83134632330000002" green="0.88667827070000005" blue="0.1677899393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.6418667489321952" green="0.65625982046144637" blue="0.65728222147720206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="leading" secondItem="i9Z-Ew-tK5" secondAttribute="leading" constant="17" id="Rmo-jP-UqM"/>
-                                    <constraint firstAttribute="trailing" secondItem="oMg-e4-Wzc" secondAttribute="trailing" constant="16" id="g9c-ZK-t0Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="oMg-e4-Wzc" secondAttribute="bottom" constant="165" id="s3I-J5-nhj"/>
-                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="top" constant="164" id="xM4-4L-Vxn"/>
+                                    <constraint firstAttribute="trailing" secondItem="oMg-e4-Wzc" secondAttribute="trailing" constant="85" id="GV1-bT-R8f"/>
+                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="top" constant="188" id="LXQ-Un-ePV"/>
+                                    <constraint firstAttribute="bottom" secondItem="oMg-e4-Wzc" secondAttribute="bottom" constant="187" id="N7S-yb-Km5"/>
+                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i9Z-Ew-tK5" secondAttribute="leading" id="Rmo-jP-UqM"/>
+                                    <constraint firstAttribute="bottom" secondItem="oMg-e4-Wzc" secondAttribute="bottom" constant="182" id="a8a-MI-7Fu"/>
+                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="leading" secondItem="i9Z-Ew-tK5" secondAttribute="leading" constant="84" id="bh2-rb-VRS"/>
+                                    <constraint firstItem="oMg-e4-Wzc" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="top" constant="182" id="g4y-aS-O3c"/>
+                                    <constraint firstAttribute="trailing" secondItem="oMg-e4-Wzc" secondAttribute="trailing" constant="96" id="g9c-ZK-t0Q"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LXQ-Un-ePV"/>
+                                        <exclude reference="N7S-yb-Km5"/>
+                                        <exclude reference="Rmo-jP-UqM"/>
+                                        <exclude reference="g9c-ZK-t0Q"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnz-6Q-xI0">
-                                <rect key="frame" x="78" y="470" width="218" height="64"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="1" green="0.23751410510000001" blue="0.45685700229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="461" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.55896671423097932" green="1" blue="0.4618178813390551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.25668598069925969" green="0.18958949935763317" blue="0.75172036917098439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.94705237229999994" blue="0.32079995970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -50,18 +64,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i9Z-Ew-tK5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="2y0-W7-49L"/>
-                            <constraint firstItem="i9Z-Ew-tK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="3cy-Lg-QMu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nnz-6Q-xI0" secondAttribute="trailing" constant="70" id="HaW-cN-Ck1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i9Z-Ew-tK5" secondAttribute="trailing" constant="40" id="XDU-lJ-1cu"/>
-                            <constraint firstItem="nnz-6Q-xI0" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="bottom" constant="30" id="hSk-ri-9m3"/>
-                            <constraint firstItem="nnz-6Q-xI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="kGe-Ae-qPL"/>
+                            <constraint firstItem="i9Z-Ew-tK5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="2y0-W7-49L"/>
+                            <constraint firstItem="i9Z-Ew-tK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3cy-Lg-QMu"/>
+                            <constraint firstItem="nnz-6Q-xI0" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="bottom" constant="26" id="EoH-g2-ogA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nnz-6Q-xI0" secondAttribute="trailing" constant="16" id="RzL-vO-cyw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i9Z-Ew-tK5" secondAttribute="trailing" id="XDU-lJ-1cu"/>
+                            <constraint firstItem="nnz-6Q-xI0" firstAttribute="top" secondItem="i9Z-Ew-tK5" secondAttribute="bottom" constant="34" id="hSk-ri-9m3"/>
+                            <constraint firstItem="nnz-6Q-xI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tJx-gL-dUH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hSk-ri-9m3"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="Biz-fc-FOe"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="nnz-6Q-xI0" id="Nld-mt-gpb"/>
